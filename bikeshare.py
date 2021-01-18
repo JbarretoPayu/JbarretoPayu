@@ -20,8 +20,8 @@ def get_filters():
 
 while True:
 city = input("\nWhich city would you like to filter by? New York City, Chicago or Washington?\n")
-if city not in ('New York City', 'Chicago', 'Washington'):
-print("Try again")
+            inputcity = ['chicago' ,'new york city', 'washington']
+            if(city in inputcity):
 continue
 else:
 break
