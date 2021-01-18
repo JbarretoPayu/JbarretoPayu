@@ -25,9 +25,7 @@ print("Try again")
 continue
 else:
 break
-
     # TO DO: get user input for month (all, january, february, ... , june)
-
 while True:
 month = input("\nChoose a month to filter January, February, March, April, May, June or type 'All'?\n")
 if month not in ('January', 'February', 'March', 'April', 'May', 'June', 'All'):
@@ -35,10 +33,7 @@ print("Try again")
 continue
 else:
 break
-
-
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-
 while True:
 day = input("\nPlease enter one of the following days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or 'All'\n")
 if day not in ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'All'):
