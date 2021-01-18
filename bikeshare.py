@@ -37,15 +37,13 @@ break
 while True:
 day = input("\nPlease enter one of the following days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or 'All'\n")
 if day not in ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'All'):
-print("Try again")
+print("Vuelva a Intentar")
 continue
 else:
 break
 
 print('-'*40)
 return city, month, day
-
-
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -94,7 +92,6 @@ def time_stats(df):
     popular_month = df['month'].mode()[0]
     print('Most Common Month:', popular_month)
 
-
     # TO DO: display the most common day of week
     popular_day = df['day_of_week'].mode()[0]
     print('Most Common day:', popular_day)
@@ -128,7 +125,6 @@ def station_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
